@@ -14,10 +14,9 @@ print "[+] Accepted connection from: " + str(addr)+ "."
 
 while 1:
     msg = c_sock.recv(0x200)
-	
-	if msg == '':
-		break
-	
+
+    if not msg: break
+    
     print "[+] Client sent: " + msg
 
 s_sock.close()

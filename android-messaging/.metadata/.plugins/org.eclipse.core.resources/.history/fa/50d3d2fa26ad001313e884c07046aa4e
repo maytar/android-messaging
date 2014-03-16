@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				String message = msgBox.getText().toString();
+				String message = msgBox.getText().toString().g;
 				
 				mTcpClient.sendMessage(message.getBytes());
 				
